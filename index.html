@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Inventory Management App</h1>
+  <div id="inventory">
+    <h2>Tempered Glass</h2>
+    <div class="item-container">
+      <label for="tempered-glass-initial">Initial Stock:</label>
+      <input type="number" id="tempered-glass-initial" min="0">
+    </div>
+    <div class="item-container">
+      <label for="tempered-glass-sold">Sold Today:</label>
+      <input type="number" id="tempered-glass-sold" min="0">
+    </div>
+    <button onclick="calculateTemperedGlass()">Calculate</button>
+    <p id="tempered-glass-result"></p>
+
+    <h2>Back Covers</h2>
+    <div class="item-container">
+      <label for="back-cover-initial">Initial Stock:</label>
+      <input type="number" id="back-cover-initial" min="0">
+    </div>
+    <div class="item-container">
+      <label for="back-cover-sold">Sold Today:</label>
+      <input type="number" id="back-cover-sold" min="0">
+    </div>
+    <button onclick="calculateBackCover()">Calculate</button>
+    <p id="back-cover-result"></p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
